@@ -1,3 +1,9 @@
+---
+layout: content
+title: Triangle
+---
+
+
 # Triangle
 
 My head is a triangle: Equilateral.  
