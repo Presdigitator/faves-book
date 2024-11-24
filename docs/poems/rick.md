@@ -1,3 +1,8 @@
+---
+layout: content
+title: Rick
+---
+
 # Rick
 
 Rick is gay.  
