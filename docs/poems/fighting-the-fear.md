@@ -1,3 +1,8 @@
+---
+layout: content
+title: Plastic
+---
+
 # Fighting The Fear
 
 *Note: Originally posted on my old Tumblr, on Septermber 11 2014\. With the following backstory: “I wrote this as an experiment with patterns of word breaks and assonance, inspired by reading about that kind of thing in the Theory of Literature course I’m doing online at the moment.  I think the poem’s turned out to be about anxiety.”*
