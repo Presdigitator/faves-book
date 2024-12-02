@@ -1,0 +1,48 @@
+---
+layout: base
+extra_styles: |
+    .prose-content {
+        font-family: Georgia, serif;
+        line-height: 1.7;
+        font-size: 1.1em;
+    }
+    .prose-content p {
+        text-indent: 2em;
+        margin-bottom: 1.2em;
+        hyphens: auto;
+    }
+    .prose-content p:first-of-type {
+        text-indent: 0;
+    }
+    .prose-title {
+        font-size: 2.2em;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+        font-family: Georgia, serif;
+    }
+    .chapter-heading {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 2em 0 1em 0;
+        text-align: center;
+    }
+    .scene-break {
+        text-align: center;
+        margin: 2em 0;
+    }
+    .scene-break::before {
+        content: "* * *";
+        color: #666;
+    }
+    .prose-content p.dialogue {
+        text-indent: 1em;
+    }
+---
+<div class="content bg-white rounded-lg shadow-md p-8">
+    <div class="prose-content">
+        {% if page.title %}
+            <div class="prose-title">{{ page.title }}</div>
+        {% endif %}
+        {{ content }}
+    </div>
+</div>
