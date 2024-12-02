@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}Chloe's Faves</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Base styles that apply to all layouts -->
+    <style>
+        .content {
+            max-width: 65ch;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .content h1 { font-size: 2em; margin-bottom: 1em; font-weight: bold; }
+        .content h2 { font-size: 1.5em; margin-bottom: 0.8em; font-weight: bold; }
+    </style>
+    
+    <!-- Additional styles specific to each layout -->
+    {% if layout.extra_styles %}
+        <style>
+            {{ layout.extra_styles }}
+        </style>
+    {% endif %}
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto py-8 px-4">
+        <div class="text-center mb-8">
+            <a href="{{ site.homepage }}" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                ← Back to Home
+            </a>
+        </div>
+        
+        {{ content }}
+
+        <div class="text-center mt-8">
+            <a href="{{ site.homepage }}" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                ← Back to Home
+            </a>
+        </div>
+    </div>
+</body>
+</html>
