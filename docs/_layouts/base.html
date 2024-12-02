@@ -15,9 +15,19 @@
         }
         .content h1 { font-size: 2em; margin-bottom: 1em; font-weight: bold; }
         .content h2 { font-size: 1.5em; margin-bottom: 0.8em; font-weight: bold; }
+        .content-note {
+            font-style: italic;
+            color: #666;
+            border-left: 3px solid #ccc;
+            padding-left: 1em;
+            margin-bottom: 2em;
+            font-size: 0.9em;
+            line-height: 1.5;
+            max-width: 65ch;
+            margin: 0 auto 2em auto;
+        }
     </style>
     
-    <!-- Additional styles specific to each layout -->
     {% if layout.extra_styles %}
         <style>
             {{ layout.extra_styles }}
@@ -31,6 +41,12 @@
                 ← Back to Home
             </a>
         </div>
+        
+        {% if page.note %}
+            <div class="content-note">
+                {{ page.note }}
+            </div>
+        {% endif %}
         
         {{ content }}
 
