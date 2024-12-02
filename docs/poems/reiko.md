@@ -2,12 +2,12 @@
 ---
 layout: content
 title: Reiko
+note: |
+  Originally posted on my old Tumblr, July 12th 2015
 ---
 
 
 # Reiko
-
-*Note: Originally posted on my old Tumblr, July 12th 2015*
 
 Lay me down, lay down to rest.  
 Hang black curtains, tidy the mess.  
