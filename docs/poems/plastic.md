@@ -3,9 +3,6 @@ layout: content
 title: Plastic
 ---
 
-
-# Plastic
-
 Plastic melts.
 Spoon it up with a fork
 And drip it over
